@@ -1,0 +1,23 @@
+Verificar Resultados Das Buscas Dos Ceps. 
+
+Software Testado https://apicep.com/api-de-consulta/.
+
+Ferramentas de automação usadas : Robot Framework , Visual code e demais ferramentas está no repositorio do GitHub.
+
+
+Objetivo dos testes: Pesquisar um cep válido e invalido,
+Validar os retornos obtidos,
+Então deve exibir o resultado em uma página de resultados.
+
+Cenarios De Testes:
+
+-Cenario 1 Cep Valido
+ Dado que o usuario está na tela inicial
+ Quando Ele clica em Buscar Cep e digita um cep valido
+ Então ele dever ver o endereço correspondente com o cep digitado
+
+-Cenario 2 Cep Invalido
+ Dado que o usuario está na tela inicial
+ Quando Ele clica em Buscar Cep e digita um cep invalido
+ Então ele dever uma mensagem de "CEP não encontrado" 
+	
