@@ -16,4 +16,5 @@ Cenario 2 Cep Invalido
     Abrir navegador
     Verificar Header Da Pagina Home
     Buscar Cep Invalido
-    Mensagem De Erro Ao Procurar O Cep Invalido   
+    Mensagem De Erro Ao Procurar O Cep Invalido 
+    Fechar Navegador  
