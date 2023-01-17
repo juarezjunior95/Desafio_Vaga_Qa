@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@juarezjunior95 
-laojala
-/
-robot_docker_demo
-Public
-Fork your own copy of laojala/robot_docker_demo
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-robot_docker_demo/.github/workflows/run_robot_framework_tests.yml
-@laojala
-laojala Remove external commenting action (#7)
-…
-Latest commit 082551e on Sep 20, 2022
- History
- 1 contributor
-49 lines (49 sloc)  2.15 KB
 
 # runs tests for push-events, for pull requests and using cron schedule:
 name: Run Robot Framework Tests
@@ -77,18 +48,3 @@ jobs:
             name: reports
             # set path to Robot Framework results reports. Exclude dummy file that is needed because of ppodgorsek image priviledges.
             path: ${{ github.workspace }}/reports
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-robot_docker_demo/run_robot_framework_tests.yml at master · laojala/robot_docker_demo
