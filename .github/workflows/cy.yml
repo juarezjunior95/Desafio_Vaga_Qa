@@ -1,6 +1,7 @@
 robot_test:
     runs-on: ubuntu-latest
     name: Run Robot Framework Tests
+    on: [push]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
