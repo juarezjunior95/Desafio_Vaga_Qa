@@ -21,6 +21,7 @@ Abrir Navegador
     Maximize Browser Window
 Fechar Navegador
     Sleep    5
+    Capture Page Screenshot
     Close Browser
 
 Verificar Header Da Pagina Home
