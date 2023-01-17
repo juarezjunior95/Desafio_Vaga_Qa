@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230117 09:27:27.765" rpa="false" schemaversion="3">
+<suite id="s1" name="BuscandoCep" source="c:\Users\juares.junior\Documents\Projetos\Desafio Wlabs\Tests\BuscandoCep.robot">
+<test id="s1-t1" name="Cenario 2 Cep Invalido" line="15">
+<kw name="Abrir Navegador" library="resources">
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230117 09:27:28.022" endtime="20230117 09:27:28.023"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Base_URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230117 09:27:28.024" level="INFO">Opening browser 'chrome' to base url 'https://apicep.com/api-de-consulta/'.</msg>
+<status status="PASS" starttime="20230117 09:27:28.023" endtime="20230117 09:27:32.081"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230117 09:27:32.081" endtime="20230117 09:27:32.203"/>
+</kw>
+<status status="PASS" starttime="20230117 09:27:28.022" endtime="20230117 09:27:32.203"/>
+</kw>
+<kw name="Verificar Header Da Pagina Home" library="resources">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Texto_ApiDeConsulta}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230117 09:27:32.205" endtime="20230117 09:27:32.233"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Sub_Texto}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230117 09:27:32.234" endtime="20230117 09:27:32.257"/>
+</kw>
+<status status="PASS" starttime="20230117 09:27:32.204" endtime="20230117 09:27:32.257"/>
+</kw>
+<kw name="Buscar Cep Invalido" library="resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Botão_Buscar_Cep}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230117 09:27:32.259" endtime="20230117 09:27:32.302"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Botão_Buscar_Cep}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230117 09:27:32.303" level="INFO">Clicking element 'xpath=//a[@class='et_pb_button et_pb_button_0 et_pb_bg_layout_dark'][contains(.,'Buscar CEP')]'.</msg>
+<status status="PASS" starttime="20230117 09:27:32.302" endtime="20230117 09:27:32.717"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Campo_Cep}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230117 09:27:32.717" endtime="20230117 09:27:32.740"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Campo_Cep}</arg>
+<arg>${Cep_Invalido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230117 09:27:32.741" level="INFO">Typing text '0000001' into text field 'name=code'.</msg>
+<status status="PASS" starttime="20230117 09:27:32.741" endtime="20230117 09:27:32.820"/>
+</kw>
+<status status="PASS" starttime="20230117 09:27:32.258" endtime="20230117 09:27:32.820"/>
+</kw>
+<kw name="Mensagem De Erro Ao Procurar O Cep Invalido" library="resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Botão_Buscar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230117 09:27:32.821" endtime="20230117 09:27:32.841"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Botão_Buscar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230117 09:27:32.842" level="INFO">Clicking element 'id=btnbuscarcep'.</msg>
+<status status="PASS" starttime="20230117 09:27:32.842" endtime="20230117 09:27:32.883"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Cep_Nao_Encontrado}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230117 09:27:32.883" endtime="20230117 09:27:32.895"/>
+</kw>
+<status status="PASS" starttime="20230117 09:27:32.821" endtime="20230117 09:27:32.895"/>
+</kw>
+<status status="PASS" starttime="20230117 09:27:28.021" endtime="20230117 09:27:32.896"/>
+</test>
+<status status="PASS" starttime="20230117 09:27:27.771" endtime="20230117 09:27:32.897"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="BuscandoCep">BuscandoCep</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
