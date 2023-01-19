@@ -15,14 +15,9 @@ Cenarios De Testes:
  Dado que o usuario está na tela inicial
  Quando Ele clica em Buscar Cep e digita um cep valido
  Então ele dever ver o endereço correspondente com o cep digitado
- Resultado: Software respondeu como o esperado ao preencher o campo de cep com numero valido
 
 -Cenario 2 Cep Invalido
  Dado que o usuario está na tela inicial
  Quando Ele clica em Buscar Cep e digita um cep invalido
  Então ele dever uma mensagem de "CEP não encontrado" 
- Resultado: Software respondeu como esperado ao digitar um cep invalido no campo de buscas de cep com uma mensagem 
- de cep invalido.
-
-Observação: Software permite inserir no campo de busca de cep caracteres especiais.
 	
